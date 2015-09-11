@@ -181,7 +181,7 @@ PRODUCT_PACKAGES += \
 
 # EGL config
 PRODUCT_COPY_FILES += \
-    device/lge/lagnm/configs/egl.cfg:system/lib/egl/egl.cfg
+    device/lge/jagnm/configs/egl.cfg:system/lib/egl/egl.cfg
 
 # Opengles version 3
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -302,7 +302,7 @@ PRODUCT_PACKAGES += \
     nfc_nci.pn54x.default \
     com.android.nfc_extras
 
-NFCEE_ACCESS_PATH := device/lge/lagnm/configs/nfcee_access.xml
+NFCEE_ACCESS_PATH := device/lge/jagnm/configs/nfcee_access.xml
 
 # QC time services
 PRODUCT_PROPERTY_OVERRIDES += \

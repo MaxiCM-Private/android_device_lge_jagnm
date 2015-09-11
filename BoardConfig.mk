@@ -44,8 +44,8 @@ TARGET_BOOTLOADER_BOARD_NAME := jagnm-qcom
 # Kernel image
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/jagnm/mkbootimg.mk
-TARGET_KERNEL_SOURCE := kernel/lge/msm8926
-TARGET_KERNEL_CONFIG := jagnm_defconfig
+TARGET_KERNEL_SOURCE := kernel/lge/jagnm
+TARGET_KERNEL_CONFIG := cyanogenmod_jagnm_defconfig
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
@@ -97,6 +97,7 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WIFI_DRIVER_FW_PATH_AP := "ap"
 
 # Recovery
+TARGET_RECOVERY_FSTAB := device/lge/jagnm/rootdir/fstab.jagnm
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_EXT4 := true
