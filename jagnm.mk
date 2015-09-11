@@ -76,8 +76,8 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.primary.msm8226 \
-    audio_policy.msm8226 \
+    audio.primary.msm8926 \
+    audio_policy.msm8926 \
     audio.a2dp.default \
     audio.usb.default \
     audio.r_submix.default \
@@ -135,7 +135,7 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    gps.msm8226
+    gps.msm8926
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf
@@ -161,12 +161,12 @@ PRODUCT_PACKAGES += \
 
 # HAL
 PRODUCT_PACKAGES += \
-    copybit.msm8226\
-    gralloc.msm8226 \
-    hwcomposer.msm8226 \
-    lights.msm8226 \
-    memtrack.msm8226 \
-    power.msm8226
+    copybit.msm8926\
+    gralloc.msm8926 \
+    hwcomposer.msm8926 \
+    lights.msm8926 \
+    memtrack.msm8926 \
+    power.msm8926
 
 # QRNG
 PRODUCT_PACKAGES += qrngp
