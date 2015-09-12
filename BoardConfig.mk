@@ -21,13 +21,11 @@
 # definition file).
 #
 
-USE_CAMERA_STUB := false
-TARGET_NO_BOOTLOADER := true
-
+# Include headers
 TARGET_SPECIFIC_HEADER_PATH += device/lge/jagnm/include
 
 # Platform
-TARGET_BOARD_PLATFORM := msm8926
+TARGET_BOARD_PLATFORM := msm8226
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
 
 # Architecture
@@ -38,8 +36,8 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_MEMCPY_BASE_OPT_DISABLE := true
 TARGET_CPU_SMP := true
 TARGET_CPU_VARIANT := krait
-
 TARGET_BOOTLOADER_BOARD_NAME := jagnm-qcom
+TARGET_NO_BOOTLOADER := true
 
 # Kernel image
 BOARD_KERNEL_SEPARATED_DT := true
@@ -105,6 +103,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
+USE_CAMERA_STUB := false
 
 # Storage
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
