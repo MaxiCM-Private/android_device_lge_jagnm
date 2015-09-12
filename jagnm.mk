@@ -68,10 +68,15 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_COPY_FILES += \
     device/lge/jagnm/rootdir/fstab.jagnm:root/fstab.jagnm \
+    device/lge/jagnm/rootdir/init.lge.cmm.usb.sh:root/init.lge.cmm.usb.sh \
+    device/lge/jagnm/rootdir/init.lge.power.rc:root/init.lge.power.rc \
     device/lge/jagnm/rootdir/init.jagnm.rc:root/init.jagnm.rc \
     device/lge/jagnm/rootdir/init.qcom.rc:root/init.qcom.rc \
     device/lge/jagnm/rootdir/init.lge.usb.rc:root/init.lge.usb.rc \
+    device/lge/jagnm/rootdir/init.lge.usb.sh:root/init.lge.usb.sh \
+    device/lge/jagnm/rootdir/init.lge.wifi.rc:root/init.lge.wifi.rc \
     device/lge/jagnm/rootdir/init.recovery.jagnm.rc:root/init.recovery.jagnm.rc \
+    device/lge/jagnm/rootdir/init.zetaw_core.rc:root/init.zetaw_core.rc \
     device/lge/jagnm/rootdir/ueventd.jagnm.rc:root/ueventd.jagnm.rc
 
 # Audio
