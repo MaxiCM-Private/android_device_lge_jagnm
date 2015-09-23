@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015 MaxiCM Team
+# Copyright (C) 2015 The MaxiCM Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,7 +21,9 @@
 # definition file).
 #
 
-# Include headers
+USE_CAMERA_STUB := false
+TARGET_NO_BOOTLOADER := true
+
 TARGET_SPECIFIC_HEADER_PATH += device/lge/jagnm/include
 
 # Platform
@@ -43,7 +45,7 @@ TARGET_NO_BOOTLOADER := true
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/jagnm/mkbootimg.mk
 TARGET_KERNEL_SOURCE := kernel/lge/jagnm
-TARGET_KERNEL_CONFIG := jagnm_global_com_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_jagnm_defconfig
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
@@ -103,7 +105,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
-USE_CAMERA_STUB := false
 
 # Storage
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true

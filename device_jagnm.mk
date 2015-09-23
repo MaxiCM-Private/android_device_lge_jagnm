@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015 MaxiCM Team
+# Copyright (C) 2013 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -79,6 +79,11 @@ PRODUCT_COPY_FILES += \
     device/lge/jagnm/rootdir/init.zetaw_core.rc:root/init.zetaw_core.rc \
     device/lge/jagnm/rootdir/ueventd.jagnm.rc:root/ueventd.jagnm.rc
 
+# Offmode Charging
+PRODUCT_PACKAGES += \
+    charger_res_jagnm \
+    charger_jagnm
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.primary.msm8226 \
@@ -112,11 +117,16 @@ PRODUCT_PACKAGES += \
     libbson \
     libcurl \
     tcpdump \
+    Torch \
     libxml2
 
 # Misc
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
+
+# Keyhandler
+PRODUCT_PACKAGES += \
+    com.cyanogenmod.keyhandler
 
 # Crda
 PRODUCT_PACKAGES += \
@@ -137,13 +147,18 @@ PRODUCT_PACKAGES += \
     hostapd \
     wpa_supplicant \
     wpa_supplicant.conf \
+    libwcnss_qmi \
 
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8226
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
+    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/gps/flp.conf:system/etc/flp.conf \
+    $(LOCAL_PATH)/gps/izat.conf:system/etc/izat.conf \
+    $(LOCAL_PATH)/gps/quipc.conf:system/etc/quipc.conf \
+    $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf
 
 # Charger
 PRODUCT_PACKAGES += charger charger_res_images
@@ -163,6 +178,10 @@ PRODUCT_PACKAGES += \
     libqcomfm_jni \
     FM2 \
     FMRecord
+
+# GPS
+PRODUCT_PACKAGES += \
+    gps.msm8226
 
 # HAL
 PRODUCT_PACKAGES += \
@@ -321,5 +340,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
-$(call inherit-product, vendor/lge/jagnm/jagnm-vendor-blobs.mk)
+$(call inherit-product, vendor/lge/jagnm/jagnm-vendor.mk)
 
