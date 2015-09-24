@@ -46,6 +46,7 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/jagnm/mkbootimg.mk
 TARGET_KERNEL_SOURCE := kernel/lge/jagnm
 TARGET_KERNEL_CONFIG := cyanogenmod_jagnm_defconfig
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 msm_rtb.filter=0x37 androidboot.hardware=jagnm androidboot.selinux=enforcing
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
@@ -105,6 +106,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
+
+PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
 
 # Storage
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
