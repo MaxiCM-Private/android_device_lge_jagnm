@@ -50,7 +50,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_PREBUILT_KERNEL := device/lge/jagnm/prebuilt/kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
+#BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 
 # Offmode Charging
 COMMON_GLOBAL_CFLAGS += \
