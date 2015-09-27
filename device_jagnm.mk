@@ -48,7 +48,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_ffmpeg.xml:system/etc/media_codecs_ffmpeg.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
@@ -68,67 +67,12 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_COPY_FILES += \
     device/lge/jagnm/rootdir/fstab.jagnm:root/fstab.jagnm \
-    device/lge/jagnm/rootdir/init.lge.cmm.usb.sh:root/init.lge.cmm.usb.sh \
-    device/lge/jagnm/rootdir/init.lge.power.rc:root/init.lge.power.rc \
     device/lge/jagnm/rootdir/init.jagnm.rc:root/init.jagnm.rc \
-    device/lge/jagnm/rootdir/init.qcom.rc:root/init.qcom.rc \
-    device/lge/jagnm/rootdir/init.lge.usb.rc:root/init.lge.usb.rc \
-    device/lge/jagnm/rootdir/init.lge.usb.sh:root/init.lge.usb.sh \
-    device/lge/jagnm/rootdir/init.lge.wifi.rc:root/init.lge.wifi.rc \
-    device/lge/jagnm/rootdir/init.recovery.jagnm.rc:root/init.recovery.jagnm.rc \
-    device/lge/jagnm/rootdir/init.zetaw_core.rc:root/init.zetaw_core.rc \
-    device/lge/jagnm/rootdir/ueventd.jagnm.rc:root/ueventd.jagnm.rc
+    device/lge/jagnm/rootdir/init.jagnm.rc:root/init.jagnm.rc \
+    device/lge/jagnm/rootdir/init.jagnm.usb.rc:root/init.jagnm.usb.rc \
+    device/lge/jagnm/rootdir/ueventd.jagnm.rc:root/ueventd.jagnm.rc \
+    device/lge/jagnm/rootdir/init.baseband.sh:root/init.baseband.sh
 
-# Prebuilt Kernel
-PRODUCT_COPY_FILES += \
-    device/lge/jagnm/prebuilt/kernel:kernel
-
-# Prebuilt Modules
-PRODUCT_COPY_FILES += \
-    device/lge/jagnm/prebuilt/modules/ansi_cprng.ko:system/lib/modules/libansi_cprng.ko \
-    device/lge/jagnm/prebuilt/modules/dma_test.ko:system/lib/modules/dma_test.ko \
-    device/lge/jagnm/prebuilt/modules/evbug.ko:system/lib/modules/evbug.ko \
-    device/lge/jagnm/prebuilt/modules/exfatfs.ko:system/lib/modules/exfatfs.ko \
-    device/lge/jagnm/prebuilt/modules/gpio_axis.ko:system/lib/modules/gpio_axis.ko \
-    device/lge/jagnm/prebuilt/modules/gpio_event.ko:system/lib/modules/gpio_event.ko \
-    device/lge/jagnm/prebuilt/modules/gpio_input.ko:system/lib/modules/gpio_input.ko \
-    device/lge/jagnm/prebuilt/modules/gpio_matrix.ko:system/lib/modules/gpio_matrix.ko \
-    device/lge/jagnm/prebuilt/modules/gpio_output.ko:system/lib/modules/gpio_output.ko \
-    device/lge/jagnm/prebuilt/modules/gspca_main.ko:system/lib/modules/gspca_main.ko \
-    device/lge/jagnm/prebuilt/modules/max2165.ko:system/lib/modules/max2165.ko \
-    device/lge/jagnm/prebuilt/modules/mc44s803.ko:system/lib/modules/mc44s803.ko \
-    device/lge/jagnm/prebuilt/modules/mcDrvModule.ko:system/lib/modules/mcDrvModule.ko \
-    device/lge/jagnm/prebuilt/modules/mcKernelApi.ko:system/lib/modules/mcKernelApi.ko \
-    device/lge/jagnm/prebuilt/modules/mmc_test.ko:system/lib/modules/mmc_test.ko \
-    device/lge/jagnm/prebuilt/modules/dma_test.ko:system/lib/modules/dma_test.ko \
-    device/lge/jagnm/prebuilt/modules/msm-buspm-dev.ko:system/lib/modules/msm-buspm-dev.ko \
-    device/lge/jagnm/prebuilt/modules/mt20xx.ko:system/lib/modules/mt20xx.ko \
-    device/lge/jagnm/prebuilt/modules/mt2060.ko:system/lib/modules/mt2060.ko \
-    device/lge/jagnm/prebuilt/modules/mt2063.ko:system/lib/modules/mt2063.ko \
-    device/lge/jagnm/prebuilt/modules/mt2131.ko:system/lib/modules/mt2131.ko \
-    device/lge/jagnm/prebuilt/modules/mt2266.ko:system/lib/modules/mt2266.ko \
-    device/lge/jagnm/prebuilt/modules/mxl5005s.ko:system/lib/modules/mxl5005s.ko \
-    device/lge/jagnm/prebuilt/modules/mxl5007t.ko:system/lib/modules/mxl5007t.ko \
-    device/lge/jagnm/prebuilt/modules/oprofile.ko:system/lib/modules/oprofile.ko \
-    device/lge/jagnm/prebuilt/modules/qcedev.ko:system/lib/modules/qcedev.ko \
-    device/lge/jagnm/prebuilt/modules/qcrypto.ko:system/lib/modules/qcrypto.ko \
-    device/lge/jagnm/prebuilt/modules/qt1010.ko:system/lib/modules/qt1010.ko \
-    device/lge/jagnm/prebuilt/modules/radio-iris-transport.ko:system/lib/modules/radio-iris-transport.ko \
-    device/lge/jagnm/prebuilt/modules/reset_modem.ko:system/lib/modules/reset_modem.ko \
-    device/lge/jagnm/prebuilt/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
-    device/lge/jagnm/prebuilt/modules/spidev.ko:system/lib/modules/spidev.ko \
-    device/lge/jagnm/prebuilt/modules/tda827x.ko:system/lib/modules/tda827x.ko \
-    device/lge/jagnm/prebuilt/modules/tda8290.ko:system/lib/modules/tda8290.ko \
-    device/lge/jagnm/prebuilt/modules/tda9887.ko:system/lib/modules/tda9887.ko \
-    device/lge/jagnm/prebuilt/modules/tda18212.ko:system/lib/modules/tda18212.ko \
-    device/lge/jagnm/prebuilt/modules/tda18218.ko:system/lib/modules/tda18218.ko \
-    device/lge/jagnm/prebuilt/modules/tda18271.ko:system/lib/modules/tda18271.ko \
-    device/lge/jagnm/prebuilt/modules/tda5761.ko:system/lib/modules/tda5761.ko \
-    device/lge/jagnm/prebuilt/modules/tda5767.ko:system/lib/modules/tda5767.ko \
-    device/lge/jagnm/prebuilt/modules/tuner-types.ko:system/lib/modules/tuner-types.ko \
-    device/lge/jagnm/prebuilt/modules/tuner-xc2028.ko:system/lib/modules/tuner-xc2028.ko \
-    device/lge/jagnm/prebuilt/modules/xc4000.ko:system/lib/modules/xc4000.ko \
-    device/lge/jagnm/prebuilt/modules/xc5000.ko:system/lib/modules/xc5000.ko
 
 # Offmode Charging
 PRODUCT_PACKAGES += \
@@ -204,12 +148,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gps.msm8226
 
+# GPS Configs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/gps/flp.conf:system/etc/flp.conf \
     $(LOCAL_PATH)/gps/izat.conf:system/etc/izat.conf \
     $(LOCAL_PATH)/gps/quipc.conf:system/etc/quipc.conf \
     $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf
+
+# dt.img
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/dt.img:dt.img 
 
 # Charger
 PRODUCT_PACKAGES += charger charger_res_images
@@ -291,7 +240,13 @@ PRODUCT_PACKAGES += \
     libOmxAmrEnc \
     libOmxEvrcEnc \
     libOmxQcelp13Enc \
-    libdashplayer \
+    libdashplayer 
+
+# Media
+PRODUCT_PACKAGES += \
+    qcmediaplayer
+
+PRODUCT_BOOT_JARS += \
     qcmediaplayer
 
 # Filesystem management tools
