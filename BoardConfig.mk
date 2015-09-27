@@ -74,6 +74,7 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
 USE_OPENGL_RENDERER := true
+OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 # Hardware tunables framework
 BOARD_HARDWARE_CLASS := device/lge/jagnm/cmhw/
