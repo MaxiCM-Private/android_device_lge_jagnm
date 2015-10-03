@@ -129,8 +129,11 @@ TARGET_OTA_ASSERT_DEVICE := jagnm,jagn
 EXTENDED_FONT_FOOTPRINT := true
 
 # Nfc
+BOARD_HAVE_NFC := true
 BOARD_NFC_CHIPSET := pn547
 
+
+# SELinux Policy
 BOARD_SEPOLICY_DIRS := \
        device/lge/jagnm/sepolicy
 
