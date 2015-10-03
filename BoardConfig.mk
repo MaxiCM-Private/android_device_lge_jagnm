@@ -131,5 +131,13 @@ EXTENDED_FONT_FOOTPRINT := true
 # Nfc
 BOARD_NFC_CHIPSET := pn547
 
+BOARD_SEPOLICY_DIRS := \
+       device/lge/jagnm/sepolicy
+
+BOARD_SEPOLICY_UNION := \
+       device.te \
+       app.te \
+       file_contexts
+
 # Power
 TARGET_POWERHAL_VARIANT := qcom
