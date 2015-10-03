@@ -123,6 +123,8 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true
 
+TARGET_OTA_ASSERT_DEVICE := jagnm,jagn
+
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
 
