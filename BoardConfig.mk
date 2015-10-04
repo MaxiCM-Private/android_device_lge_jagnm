@@ -133,14 +133,9 @@ BOARD_HAVE_NFC := true
 BOARD_NFC_CHIPSET := pn547
 
 
-# SELinux Policy
-BOARD_SEPOLICY_DIRS := \
-       device/lge/jagnm/sepolicy
+# QCOM SELinux Policy
 
-BOARD_SEPOLICY_UNION := \
-       device.te \
-       app.te \
-       file_contexts
+include device/qcom/sepolicy/sepolicy.mk
 
 # Power
 TARGET_POWERHAL_VARIANT := qcom
