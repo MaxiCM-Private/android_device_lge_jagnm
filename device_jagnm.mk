@@ -58,8 +58,8 @@ PRODUCT_COPY_FILES += \
     device/lge/jagnm/configs/audio_effects.conf:system/etc/audio_effects.conf \
     device/lge/jagnm/configs/media_codecs.xml:system/etc/media_codecs.xml \
     device/lge/jagnm/configs/media_profiles.xml:system/etc/media_profiles.xml \
-    device/lge/jagnm/configs/keylayout/Generic-D4x5.kl:system/usr/keylayout/Generic-D4x5.kl \
-    device/lge/jagnm/configs/keylayout/Generic-D410.kl:system/usr/keylayout/Generic-D410.kl \
+    device/lge/jagnm/configs/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+    device/lge/jagnm/configs/keylayout/synaptics_rmi4_i2c.kl:system/usr/keylayout/synaptics_rmi4_i2c.kl \
     device/lge/jagnm/configs/nfc-nci.conf:system/etc/nfc-nci.conf \
     device/lge/jagnm/configs/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     device/lge/jagnm/configs/nfcee_access.xml:system/etc/nfcee_access.xml \
