@@ -123,11 +123,19 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true
 
+TARGET_OTA_ASSERT_DEVICE := jagnm,jagn
+
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
 
 # Nfc
+BOARD_HAVE_NFC := true
 BOARD_NFC_CHIPSET := pn547
+
+
+# QCOM SELinux Policy
+
+include device/qcom/sepolicy/sepolicy.mk
 
 # Power
 TARGET_POWERHAL_VARIANT := qcom
