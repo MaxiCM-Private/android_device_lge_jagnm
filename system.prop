@@ -26,6 +26,8 @@ persist.radio.msgtunnel.start=false
 #
 persist.cne.feature=1
 
+#Density
+ro.sf.lcd_density=240
 
 # Skip /sys/power/wait_for_fb_* nodes and
 # force FB to be always on
