@@ -130,10 +130,6 @@ PRODUCT_PACKAGES += \
     regdbdump \
     regulatory.bin
 
-# Qcom SoftAP
-PRODUCT_PACKAGES += \
-    libQWiFiSoftApCfg
-
 # Wifi
 PRODUCT_PACKAGES += \
     p2p_supplicant_overlay.conf \
@@ -141,8 +137,7 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     hostapd \
     wpa_supplicant \
-    wpa_supplicant.conf \
-    libwcnss_qmi \
+    wpa_supplicant.conf 
 
 # GPS
 PRODUCT_PACKAGES += \
