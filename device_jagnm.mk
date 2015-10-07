@@ -348,3 +348,5 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 $(call inherit-product, vendor/lge/jagnm/jagnm-vendor.mk)
 
+# Get BCMDHD configs
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
