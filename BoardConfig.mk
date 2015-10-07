@@ -41,6 +41,9 @@ TARGET_CPU_VARIANT := cortex-a7
 TARGET_BOOTLOADER_BOARD_NAME := jagnm-qcom
 TARGET_NO_BOOTLOADER := true
 
+# No more block zip
+BLOCK_BASED_OTA := false
+
 # Kernel image
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/jagnm/mkbootimg.mk
