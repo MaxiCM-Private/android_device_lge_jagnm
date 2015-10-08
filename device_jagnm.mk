@@ -270,8 +270,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
     wifi.supplicant_scan_interval=15
 
-$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4335/device-bcm.mk)
-
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.24bit.enable=false \
@@ -344,3 +342,6 @@ PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 $(call inherit-product, vendor/lge/jagnm/jagnm-vendor.mk)
+
+# Get BCMDHD configs
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
