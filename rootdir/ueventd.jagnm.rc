@@ -197,3 +197,5 @@
 # Begin Immersion changes
 /dev/tspdrv               0660   system       system
 # End Immersion changes
+
+/dev/ttyHS99              0660   bluetooth  bluetooth

@@ -92,6 +92,22 @@ on boot
     mkdir /dev/socket/qmux_gps 0770 gps gps
     chmod 2770 /dev/socket/qmux_gps
 
+
+    #Bluetooth
+    chown bluetooth net_bt_stack /sys/class/rfkill/rfkill2/type
+    chown bluetooth net_bt_stack /sys/class/rfkill/rfkill2/state
+    chown bluetooth net_bt_stack /proc/bluetooth/sleep/btwake
+    chown bluetooth net_bt_stack /proc/bluetooth/sleep/proto
+    chmod 0660 /sys/class/rfkill/rfkill2/state
+    chmod 0660 /proc/bluetooth/sleep/btwake
+    chmod 0660 /proc/bluetooth/sleep/proto
+    chown bluetooth net_bt_stack /dev/ttyHS99
+    chmod 0660 /dev/ttyHS99
+    chown bluetooth net_bt_stack /sys/devices/platform/msm_serial_hs.0/clock
+    chmod 0660 /sys/devices/platform/msm_serial_hs.0/clock
+    # Feature chip vendor : brcm
+    setprop bluetooth.chip.vendor brcm
+
     # Subsytem Restart
     #adsp
     write /sys/bus/msm_subsys/devices/subsys0/restart_level "related"
@@ -307,11 +323,6 @@ service fuse_usbdisk /system/bin/sdcard -u 1023 -g 1023 /mnt/media_rw/usbdisk /s
     class late_start
     disabled
 
-service lg-baseband /system/bin/sh /init.baseband.sh
-    class late_start
-    user root
-    oneshot
-
 service irsc_util /system/bin/irsc_util "/etc/sec_config"
     class main
     user root
@@ -525,10 +536,10 @@ service mmi-ril-daemon /system/bin/rild
     user root
     group radio cache inet misc audio sdcard_rw qcom_oncrpc qcom_diag log net_raw diag
 
-service config_bluetooth /system/bin/sh /system/etc/init.zetaw.bt.sh "onboot"
-    class core
-    user root
-    oneshot
+#service config_bluetooth /system/bin/sh /system/etc/init.jagnm.bt.sh "onboot"
+#    class core
+#    user root
+#    oneshot
 
 
 # Charger
