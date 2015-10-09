@@ -37,9 +37,12 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_MEMCPY_BASE_OPT_DISABLE := true
 TARGET_CPU_SMP := true
-TARGET_CPU_VARIANT := cortex-a7
-TARGET_BOOTLOADER_BOARD_NAME := jagnm-qcom
+TARGET_CPU_VARIANT := krait
+TARGET_BOOTLOADER_BOARD_NAME := MSM8226
 TARGET_NO_BOOTLOADER := true
+
+TARGET_GLOBAL_CFLAGS += -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=softfp
 
 # No more block zip
 BLOCK_BASED_OTA := false
