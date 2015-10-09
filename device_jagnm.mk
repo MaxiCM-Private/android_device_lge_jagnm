@@ -151,10 +151,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/quipc.conf:system/etc/quipc.conf \
     $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf
 
-# dt.img
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/dt.img:dt.img 
-
 # Charger
 PRODUCT_PACKAGES += charger charger_res_images
 
