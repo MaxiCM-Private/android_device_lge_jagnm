@@ -70,8 +70,7 @@ PRODUCT_COPY_FILES += \
     device/lge/jagnm/rootdir/init.jagnm.rc:root/init.jagnm.rc \
     device/lge/jagnm/rootdir/init.jagnm.rc:root/init.jagnm.rc \
     device/lge/jagnm/rootdir/init.jagnm.usb.rc:root/init.jagnm.usb.rc \
-    device/lge/jagnm/rootdir/ueventd.jagnm.rc:root/ueventd.jagnm.rc \
-    device/lge/jagnm/rootdir/init.baseband.sh:root/init.baseband.sh
+    device/lge/jagnm/rootdir/ueventd.jagnm.rc:root/ueventd.jagnm.rc
 
 
 # Offmode Charging
