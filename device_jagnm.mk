@@ -80,7 +80,7 @@ PRODUCT_PACKAGES += \
     memtrack.msm8226
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=320
+    ro.sf.lcd_density=260
 
 # Keyhandler
 PRODUCT_PACKAGES += \
