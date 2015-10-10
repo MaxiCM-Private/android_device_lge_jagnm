@@ -19,7 +19,7 @@ ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
 persist.radio.msgtunnel.start=false
 # Start in cdma mode
-#ro.telephony.default_network=5
+#ro.telephony.default_network=10
 
 #
 # system props for the cne module
@@ -111,6 +111,16 @@ ro.qc.sdk.audio.ssr=false
 
 # system prop for NFC DT
 ro.nfc.port=I2C
+
+#property to restrict number of cameras to 2
+#In L AOSP MAX camera defined as 4, compared to 2 in KK
+#Due to that and multimode architecture, camera on 8x26 target
+#will not work properly on KK as there are non-zero specific profile
+#exists in dtsi file, which is needed fo JB camera.
+persist.camera.num_cameras=2
+
+#RIL
+ro.telephony.ril_class=LgeRIL
 
 #property to enable user to access Google WFD settings
 persist.debug.wfd.enable=1
