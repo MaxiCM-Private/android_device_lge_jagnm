@@ -154,6 +154,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/dt.img:dt.img 
 
+# System Prebuild
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,device/lge/jagnm/prebuilt/system,system)
+
 # Charger
 PRODUCT_PACKAGES += charger charger_res_images
 
