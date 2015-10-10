@@ -21,6 +21,8 @@
 # definition file).
 #
 
+TARGET_SPECIFIC_HEADER_PATH += device/lge/jagnm/include
+
 # Platform
 TARGET_NO_BOOTLOADER := true
 
