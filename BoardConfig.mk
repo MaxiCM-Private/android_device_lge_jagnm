@@ -136,6 +136,8 @@ EXTENDED_FONT_FOOTPRINT := true
 BOARD_HAVE_NFC := true
 BOARD_NFC_CHIPSET := pn547
 
+# RIL
+BOARD_RIL_CLASS := ../../../device/lge/jagnm/ril/
 
 # QCOM SELinux Policy
 
