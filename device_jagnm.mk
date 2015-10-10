@@ -66,11 +66,7 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/lge/jagnm/rootdir/fstab.jagnm:root/fstab.jagnm \
-    device/lge/jagnm/rootdir/init.jagnm.rc:root/init.jagnm.rc \
-    device/lge/jagnm/rootdir/init.jagnm.rc:root/init.jagnm.rc \
-    device/lge/jagnm/rootdir/init.jagnm.usb.rc:root/init.jagnm.usb.rc \
-    device/lge/jagnm/rootdir/ueventd.jagnm.rc:root/ueventd.jagnm.rc
+    $(call find-copy-subdir-files,*,device/lge/jagnm/rootdir,root)
 
 
 # Offmode Charging

@@ -536,7 +536,7 @@ service mmi-ril-daemon /system/bin/rild
     user root
     group radio cache inet misc audio sdcard_rw qcom_oncrpc qcom_diag log net_raw diag
 
-#service config_bluetooth /system/bin/sh /system/etc/init.jagnm.bt.sh "onboot"
+#service config_bluetooth /system/bin/sh /system/etc/init.msm8226.bt.sh "onboot"
 #    class core
 #    user root
 #    oneshot
