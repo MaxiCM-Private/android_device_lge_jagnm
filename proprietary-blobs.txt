@@ -1,3 +1,12 @@
+# Audio
+etc/acdbdata/Bluetooth_cal.acdb
+etc/acdbdata/General_cal.acdb
+etc/acdbdata/Global_cal.acdb
+etc/acdbdata/Handset_cal.acdb
+etc/acdbdata/Hdmi_cal.acdb
+etc/acdbdata/Headset_cal.acdb
+etc/acdbdata/Speaker_cal.acdb
+
 # Firmware
 etc/firmware/a225p5_pm4.fw
 etc/firmware/a225_pfp.fw
@@ -76,22 +85,10 @@ vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcvirt.so
-etc/acdbdata/Bluetooth_cal.acdb
-etc/acdbdata/General_cal.acdb
-etc/acdbdata/Global_cal.acdb
-etc/acdbdata/Handset_cal.acdb
-etc/acdbdata/Hdmi_cal.acdb
-etc/acdbdata/Headset_cal.acdb
-etc/acdbdata/Speaker_cal.acdb
 
 # Bluetooth
 bin/btnvtool
 bin/hci_qcomm_init
-
-# ???
-bin/bdaddr_loader
-lib/liblgftmitem.so
-lib/libatd_corelib.so
 
 # Camera
 bin/mm-qcamera-daemon
@@ -290,4 +287,7 @@ vendor/lib/libcneapiclient.so
 vendor/lib/libcneconn.so
 vendor/lib/libcneqmiutils.so
 
-
+# BT?
+bin/bdaddr_loader
+lib/liblgftmitem.so
+lib/libatd_corelib.so

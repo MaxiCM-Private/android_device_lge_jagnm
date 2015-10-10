@@ -1,5 +1,6 @@
-# Release name
-PRODUCT_RELEASE_NAME := D722
+# Boot animation
+TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1280
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
@@ -10,16 +11,13 @@ $(call inherit-product, device/lge/jagnm/full_jagnm.mk)
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
-# Boot animation
-TARGET_SCREEN_WIDTH := 540
-TARGET_SCREEN_HEIGHT := 960
-
-# Device identifier. This must come after all inclusions
+# Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := jagnm
+PRODUCT_RELEASE_NAME := LG G3s
 PRODUCT_NAME := cm_jagnm
-PRODUCT_BRAND := lge
-PRODUCT_MODEL := D722
-PRODUCT_MANUFACTURER := lge
+PRODUCT_BRAND := LG
+PRODUCT_MODEL := G3s
+PRODUCT_MANUFACTURER := LGE
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=D722 TARGET_DEVICE=jagnm

@@ -1,3 +1,5 @@
+ifneq ($(filter jagnm jag3gds,$(TARGET_DEVICE)),)
+
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -8,3 +10,4 @@ LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_JAVA_LIBRARY)
 
+endif
