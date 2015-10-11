@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-ifneq ($(filter jagnm,$(TARGET_DEVICE)),)
+ifneq ($(filter jagnm jagn,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
