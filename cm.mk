@@ -13,7 +13,7 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := jagnm
-PRODUCT_RELEASE_NAME := LG 
+PRODUCT_RELEASE_NAME := LG D722P
 PRODUCT_NAME := cm_jagnm
 PRODUCT_BRAND := LG
 PRODUCT_MODEL := D722P
