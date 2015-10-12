@@ -153,7 +153,7 @@ WIFI_DRIVER_FW_PATH_STA := "/system/etc/firmware/fw_bcmdhd.bin"
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/jagnm/mkbootimg.mk
 TARGET_KERNEL_SOURCE := kernel/lge/jagnm
-TARGET_KERNEL_CONFIG := cyanogenmod_jagnm_defconfig
+TARGET_KERNEL_CONFIG := maxi_jagnm_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=msm8226 user_debug=31 msm_rtb.filter=0x37 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
